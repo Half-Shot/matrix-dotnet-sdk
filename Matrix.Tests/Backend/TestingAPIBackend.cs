@@ -11,6 +11,10 @@ namespace Matrix.Backends
             return null;
         }
 
+		public Task<MatrixAPIResult> GetAsync(string apiPath, bool authenticate) {
+  			return null;
+		}
+
 		public MatrixRequestError Post (string apiPath, bool authenticate, JToken request, out JToken result) {
             result = null;
             return null;

@@ -1,0 +1,6 @@
+# Matrix.Example.Client uses spaces
+# Matrix.Tests omitted as I don't know how to specify multiple targets here
+[Matrix/*.cs]
+curly_bracket_next_line = true
+indent_style = tab
+indent_size = 4

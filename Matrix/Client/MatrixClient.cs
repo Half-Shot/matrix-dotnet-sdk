@@ -75,6 +75,7 @@ namespace Matrix.Client
         /// Initializes a new instance of the <see cref="Matrix.Client.MatrixClient"/> class for testing.
         /// </summary>
         public MatrixClient (MatrixAPI api){
+            log.LogDebug("ctor: baseurl={}", api.BaseURL);
             this.Api = api;
             api.SyncJoinEvent += MatrixClient_OnEvent;
             api.SyncInviteEvent += MatrixClient_OnInvite;
