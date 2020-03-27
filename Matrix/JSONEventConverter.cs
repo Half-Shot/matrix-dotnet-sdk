@@ -93,7 +93,7 @@ namespace Matrix
 				}
 				return content;
 			}
-			catch (Exception ex)
+			catch (Exception)
 			{
 				throw new Exception($"Failed to get content for {type}");
 			}

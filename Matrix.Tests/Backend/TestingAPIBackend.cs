@@ -6,10 +6,13 @@ namespace Matrix.Backends
 {
 	public class TestingAPIBackend : IMatrixAPIBackend
 	{
-		public MatrixRequestError Get  (string apiPath, bool authenticate, out JToken result) {
+		public MatrixRequestError Get (string apiPath, bool authenticate, out JToken result) {
             result = null;
             return null;
         }
+
+        public Task<MatrixAPIResult> GetAsync(string apiPath, bool authenticate)
+            => Task.FromResult<MatrixAPIResult>(default);
 
 		public MatrixRequestError Post (string apiPath, bool authenticate, JToken request, out JToken result) {
             result = null;
